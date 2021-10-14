@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "mtg-lyfe-counter",
+    "slug": "mtg-lyfe-counter",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "description": ""
+  },
+  "name": "mtg-lyfe-counter"
+}
