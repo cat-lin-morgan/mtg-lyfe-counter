@@ -1,16 +1,20 @@
-import React, {CreateContext, useState} from 'react';
+import React, {createContext, useState} from 'react';
 
-const DefaultState = {
-    activeGame: false,
-};
-
-export const GlobalContext = CreateContext(DefaultState);
+export const GlobalContext = createContext(
+    {
+        activeGame: false,
+        setActiveGame: () => {},
+        newGameStep: 0,
+        setNewGameStep: () => {},
+    }
+);
 
 export const GlobalContextProvider = ({children}) => {
-    const [state, setState] = useState(DefaultState)
-
+    const [activeGame, setActiveGame] = useState(false);
+    const [newGameStep, setNewGameStep] = useState(0);
+    
     return (
-        <GlobalContext.Provider value={{state}}>
+        <GlobalContext.Provider value={{activeGame, setActiveGame, newGameStep, setNewGameStep}}>
             {children}
         </GlobalContext.Provider>
     )

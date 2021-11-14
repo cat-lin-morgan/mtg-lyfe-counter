@@ -7,7 +7,7 @@ export default function App() {
   return (
     <GlobalContextProvider>    
       <View style={styles.container}>
-        <Text>Alex is a tremedous butt whom I, Cat Lin thee First, love very much!!!</Text>
+        <Text>Hi</Text>
         <StatusBar style="auto" />
       </View>
     </GlobalContextProvider>
