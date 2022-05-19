@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
-import { GlobalContext } from '../contexts/GlobalContext';
-import { NewGameFlow  } from './NewGameFlow';
-import { Game } from './Game';
+import React from "react";
+import { useGlobalContext } from "../contexts/GlobalContext";
+import { NewGameFlow } from "./NewGameFlow";
+import { Game } from "./Game";
 
 export const LyfeCounter = () => {
-    const { activeGame } = useContext(GlobalContext);
+  const { activeGame } = useGlobalContext();
 
-    return activeGame ? <Game/> : <NewGameFlow/>;
+  return activeGame ? <Game /> : <NewGameFlow />;
 };
