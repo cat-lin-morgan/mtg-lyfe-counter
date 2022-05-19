@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 export const NewGameFlow = () => {
-    return (
-        <div>
-            <p style={{color: "#fff"}}>New Game Flow</p>
-        </div>
-    )
+  return (
+    <div>
+      <p style={{ color: "#fff" }}>New Penis Game Flow</p>
+    </div>
+  );
 };
